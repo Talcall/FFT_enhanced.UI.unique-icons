@@ -1,0 +1,106 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\FFT_enhanced.UI.unique-icons.csproj": {}
+  },
+  "projects": {
+    "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\FFT_enhanced.UI.unique-icons.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\FFT_enhanced.UI.unique-icons.csproj",
+        "projectName": "FFT_enhanced.UI.unique-icons",
+        "projectPath": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\FFT_enhanced.UI.unique-icons.csproj",
+        "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
+        "outputPath": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0-windows7.0": {
+            "targetAlias": "net9.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Reloaded.Hooks.Definitions": {
+              "target": "Package",
+              "version": "[1.15.0, )"
+            },
+            "Reloaded.Memory.SigScan.ReloadedII.Interfaces": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Reloaded.Memory.Sigscan": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Reloaded.Mod.Interfaces": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Reloaded.SharedLib.Hooks": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.306, 9.0.306]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

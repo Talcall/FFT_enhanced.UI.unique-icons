@@ -1,0 +1,15 @@
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.csproj.AssemblyReference.cache
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.GeneratedMSBuildEditorConfig.editorconfig
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.AssemblyInfoInputs.cache
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.AssemblyInfo.cs
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.csproj.CoreCompileInputs.cache
+E:\FFT Modloader\Mods\FFT_enhanced.UI.unique_icons\Preview.png
+E:\FFT Modloader\Mods\FFT_enhanced.UI.unique_icons\ModConfig.json
+E:\FFT Modloader\Mods\FFT_enhanced.UI.unique_icons\FFT_enhanced.UI.unique-icons.deps.json
+E:\FFT Modloader\Mods\FFT_enhanced.UI.unique_icons\FFT_enhanced.UI.unique-icons.dll
+E:\FFT Modloader\Mods\FFT_enhanced.UI.unique_icons\FFT_enhanced.UI.unique-icons.pdb
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enha.5199BA36.Up2Date
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.dll
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\refint\FFT_enhanced.UI.unique-icons.dll
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.pdb
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\ref\FFT_enhanced.UI.unique-icons.dll

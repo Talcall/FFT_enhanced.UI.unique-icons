@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "nWIGE21xPDo=",
+  "success": true,
+  "projectFilePath": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\FFT_enhanced.UI.unique-icons.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.10\\microsoft.net.illink.tasks.9.0.10.nupkg.sha512",
+    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.hooks.definitions\\1.15.0\\reloaded.hooks.definitions.1.15.0.nupkg.sha512",
+    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.memory\\9.1.0\\reloaded.memory.9.1.0.nupkg.sha512",
+    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.memory.sigscan\\3.1.9\\reloaded.memory.sigscan.3.1.9.nupkg.sha512",
+    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.memory.sigscan.definitions\\1.1.1\\reloaded.memory.sigscan.definitions.1.1.1.nupkg.sha512",
+    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.memory.sigscan.reloadedii.interfaces\\1.2.0\\reloaded.memory.sigscan.reloadedii.interfaces.1.2.0.nupkg.sha512",
+    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.mod.interfaces\\2.4.0\\reloaded.mod.interfaces.2.4.0.nupkg.sha512",
+    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.sharedlib.hooks\\1.9.0\\reloaded.sharedlib.hooks.1.9.0.nupkg.sha512",
+    "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.306\\microsoft.net.sdk.compilers.toolset.9.0.306.nupkg.sha512"
+  ],
+  "logs": []
+}
