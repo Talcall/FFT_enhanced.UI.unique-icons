@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nWIGE21xPDo=",
+  "dgSpecHash": "tDGGol0KC7g=",
   "success": true,
   "projectFilePath": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\FFT_enhanced.UI.unique-icons.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,7 @@
     "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.memory.sigscan.definitions\\1.1.1\\reloaded.memory.sigscan.definitions.1.1.1.nupkg.sha512",
     "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.memory.sigscan.reloadedii.interfaces\\1.2.0\\reloaded.memory.sigscan.reloadedii.interfaces.1.2.0.nupkg.sha512",
     "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.mod.interfaces\\2.4.0\\reloaded.mod.interfaces.2.4.0.nupkg.sha512",
-    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.sharedlib.hooks\\1.9.0\\reloaded.sharedlib.hooks.1.9.0.nupkg.sha512",
-    "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.306\\microsoft.net.sdk.compilers.toolset.9.0.306.nupkg.sha512"
+    "C:\\Users\\Thomas\\.nuget\\packages\\reloaded.sharedlib.hooks\\1.9.0\\reloaded.sharedlib.hooks.1.9.0.nupkg.sha512"
   ],
   "logs": []
 }

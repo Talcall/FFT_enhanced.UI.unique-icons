@@ -13,3 +13,4 @@ E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI
 E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\refint\FFT_enhanced.UI.unique-icons.dll
 E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.pdb
 E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\ref\FFT_enhanced.UI.unique-icons.dll
+E:\FFT unique uniques\ide\FFT_enhanced.UI.unique-icons\obj\Debug\FFT_enhanced.UI.unique-icons.sourcelink.json
