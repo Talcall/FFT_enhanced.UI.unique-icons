@@ -43,6 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FF16Framework.Interfaces" Version="1.2.0" />
     <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="9.0.10" />
     <PackageReference Include="Reloaded.Hooks.Definitions" Version="1.15.0" />
     <PackageReference Include="Reloaded.Memory.Sigscan" Version="3.1.9" />

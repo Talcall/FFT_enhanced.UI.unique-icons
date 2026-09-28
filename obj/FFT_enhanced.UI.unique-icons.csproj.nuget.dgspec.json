@@ -50,6 +50,10 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "dependencies": {
+            "FF16Framework.Interfaces": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
             "Microsoft.NET.ILLink.Tasks": {
               "target": "Package",
               "version": "[9.0.10, )"

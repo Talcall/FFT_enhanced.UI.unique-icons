@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net9.0-windows7.0": {
+      "FF16Framework.Interfaces/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FF16Framework.Interfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FF16Framework.Interfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.NET.ILLink.Tasks/9.0.10": {
         "type": "package",
         "build": {
@@ -112,6 +125,21 @@
     }
   },
   "libraries": {
+    "FF16Framework.Interfaces/1.2.0": {
+      "sha512": "UpZc/l4JIGWFytANyU2KZxiDTXkX1calTx63hnerppK9gEJ9rkuHiRXjpzDS4dqLFFNjQUrs7kSdb2/a7cpSVA==",
+      "type": "package",
+      "path": "ff16framework.interfaces/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "ff16framework.interfaces.1.2.0.nupkg.sha512",
+        "ff16framework.interfaces.nuspec",
+        "lib/net8.0/FF16Framework.Interfaces.dll",
+        "lib/net8.0/FF16Framework.Interfaces.xml"
+      ]
+    },
     "Microsoft.NET.ILLink.Tasks/9.0.10": {
       "sha512": "sseaSJcBxKEpkc59hnB00b3NmJdGvJLfj74HK+nucHxERxbZSUREuWKjC9ywc+HdzJvJyiP2eiyEOROaGSfcPw==",
       "type": "package",
@@ -296,6 +324,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0-windows7.0": [
+      "FF16Framework.Interfaces >= 1.2.0",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
       "Reloaded.Hooks.Definitions >= 1.15.0",
       "Reloaded.Memory.SigScan.ReloadedII.Interfaces >= 1.2.0",
@@ -354,6 +383,10 @@
       "net9.0-windows7.0": {
         "targetAlias": "net9.0-windows",
         "dependencies": {
+          "FF16Framework.Interfaces": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
           "Microsoft.NET.ILLink.Tasks": {
             "target": "Package",
             "version": "[9.0.10, )"

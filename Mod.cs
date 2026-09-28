@@ -1,15 +1,19 @@
-﻿using Reloaded.Hooks.ReloadedII.Interfaces;
-using Reloaded.Mod.Interfaces;
+﻿using FFT_enhanced.UI.unique_icons.Configuration;
 using FFT_enhanced.UI.unique_icons.Template;
-using FFT_enhanced.UI.unique_icons.Configuration;
-using System.Reflection;
-using System.Diagnostics;
+using Reloaded.Hooks.Definitions;
+using Reloaded.Hooks.Definitions.X86;
+using Reloaded.Hooks.ReloadedII.Interfaces;
 using Reloaded.Memory.Sigscan;
 using Reloaded.Memory.SigScan.ReloadedII.Interfaces;
-using Reloaded.Hooks.Definitions.X86;
+using Reloaded.Mod.Interfaces;
+using FF16Framework.Interfaces.Nex;
+using System.Diagnostics;
+using System.Drawing;
+using System.Reflection;
 using CallingConventions = Reloaded.Hooks.Definitions.X86.CallingConventions;
-using Reloaded.Hooks.Definitions;
 using IReloadedHooks = Reloaded.Hooks.ReloadedII.Interfaces.IReloadedHooks;
+using System.Runtime.CompilerServices;
+using FF16Framework.Interfaces.Nex.Structures;
 
 #if DEBUG
 
@@ -53,6 +57,21 @@ public class Mod : ModBase // <= Do not Remove.
     /// </summary>
     private readonly IModConfig _modConfig;
 
+    /// <summary>
+    /// job command table handling
+    /// </summary>
+    private INexTable? jobCommandTable;
+    private INextExcelDBApiManagedV2? nextExcelDBApi;
+
+    private void NextExcelDBApi_OnNexLoaded()
+    {
+        if (nextExcelDBApi.Initialized)
+        {
+            _logger.WriteLine($"[{_modConfig.ModId}] Configuring job command NEX table");
+            jobCommandTable = nextExcelDBApi.GetTable(0x29);
+        }
+        
+    }
     public Mod(ModContext context)
     {
         _modLoader = context.ModLoader;
@@ -62,6 +81,8 @@ public class Mod : ModBase // <= Do not Remove.
         _configuration = context.Configuration;
         _modConfig = context.ModConfig;
         _logger.WriteLine($"[{_modConfig.ModId}] Loading... Author Talcall");
+
+
 #if DEBUG
         // Attaches debugger in debug mode; ignored in release.
         //Debugger.Launch();
@@ -79,6 +100,14 @@ public class Mod : ModBase // <= Do not Remove.
         {
             return;
         }
+        var _nexApi = _modLoader.GetController<INextExcelDBApiManagedV2>();
+        if (!_nexApi.TryGetTarget(out nextExcelDBApi))
+        {
+            _logger.WriteLine($"[{_modConfig.ModId}] Could not get INextExcelDBApi.");
+            return;
+        }
+        nextExcelDBApi.OnNexLoaded += NextExcelDBApi_OnNexLoaded;
+
 
         //hook scan
         startupScanner.AddMainModuleScan("40 53 48 83 EC ?? 48 8B D9 8B CA E8 ?? ?? ?? ?? 48 85 C0 74 ?? 8B 50 ?? 44 8B C2 41 83 E8 ?? 74 ?? 41 83 F8 ?? 74 ?? 8D 42 ?? 83 F8 ?? 76 ?? 33 D2 41 B8 ?? ?? ?? ?? 48 8B CB 48 83 C4 ?? 5B E9 ?? ?? ?? ?? BA ?? ?? ?? ?? 41 B8 ?? ?? ?? ?? 48 8B CB 48 83 C4 ?? 5B E9", result => // 0x1400FBF9C in Original release of FFTIC
@@ -101,21 +130,8 @@ public class Mod : ModBase // <= Do not Remove.
             _logger.WriteLine($"[{_modConfig.ModId}] sub_1400FAE34 hooked successfully");
         });
 
-        // j_fNex_GetJobCommand scan
-        startupScanner.AddMainModuleScan("40 53 48 83 EC ?? 48 8B 05 ?? ?? ?? ?? 8B D9 48 85 C0 75 ?? 48 8B 0D ?? ?? ?? ?? 48 85 C9 74 ?? 8D 50 ?? E8 ?? ?? ?? ?? 48 89 05 ?? ?? ?? ?? 48 85 C0 74 ?? 8B D3 48 8B C8 E8 ?? ?? ?? ?? 4C 8B C0 48 85 C0 74 ?? 48 83 38 ?? 7C ?? 48 8B C8 E8 ?? ?? ?? ?? 48 85 C0 74 ?? 49 83 38 ?? 7C ?? 49 8B C8 48 83 C4 ?? 5B E9 ?? ?? ?? ?? 48 8D 05 ?? ?? ?? ?? EB ?? 33 C0 48 83 C4 ?? 5B C3", result => // j_fNex_GetJobCommand in Original release of FFTIC
-        {
-            if (!result.Found)
-            {
-                _logger.WriteLine($"[{_modConfig.ModId}] j_fNex_GetJobCommand could not be found");
-                return;
-            }
-            var j_fNex_GetJobCommand_address = Process.GetCurrentProcess().MainModule.BaseAddress + result.Offset;
-            j_fNex_GetJobCommand_func = _hooks!.CreateWrapper<j_fNex_GetJobCommand>(j_fNex_GetJobCommand_address, out var _);
-            _logger.WriteLine($"[{_modConfig.ModId}] j_fNex_GetJobCommand found");
-        });
-
         // j_fGetJobCommandIconPath scan
-        startupScanner.AddMainModuleScan("40 53 56 57 48 81 EC ?? ?? ?? ?? 48 8B 05 ?? ?? ?? ?? 48 33 C4 48 89 84 24 ?? ?? ?? ?? 49 63 F8 8B DA 48 8B F1 48 8D 54 24 ?? 41 B0 ?? B9 ?? ?? ?? ?? 41 B9 ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8B D7 4C 8D 44 24 ?? 44 8B CB 48 8B CE E8 ?? ?? ?? ?? 48 8B 8C 24 ?? ?? ?? ?? 48 33 CC E8 ?? ?? ?? ?? 48 81 C4 ?? ?? ?? ?? 5F 5E 5B C3", result => // j_fGetJobCommandIconPath in Original release of FFTIC
+        startupScanner.AddMainModuleScan("40 53 56 57 48 81 EC ?? ?? ?? ?? 48 8B 05 ?? ?? ?? ?? 48 33 C4 48 89 84 24 ?? ?? ?? ?? 49 63 F8 8B DA 48 8B F1 48 8D 54 24 ?? 41 B0 ?? B9 10 ?? ?? ?? 41 B9 ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8B D7 4C 8D 44 24 ?? 44 8B CB 48 8B CE E8 ?? ?? ?? ?? 48 8B 8C 24 ?? ?? ?? ?? 48 33 CC E8 ?? ?? ?? ?? 48 81 C4 ?? ?? ?? ?? 5F 5E 5B C3", result => // j_fGetJobCommandIconPath in Original release of FFTIC
         {
             if (!result.Found)
             {
@@ -131,11 +147,7 @@ public class Mod : ModBase // <= Do not Remove.
 
 
     [Function(CallingConventions.MicrosoftThiscall)]
-    private delegate nint sub_1400FAE34(nint a1, nint a2, nint a3);
-
-    [Function(CallingConventions.MicrosoftThiscall)]
-    private delegate nint j_fNex_GetJobCommand(nint a1, nint a2, nint a3);
-    private j_fNex_GetJobCommand j_fNex_GetJobCommand_func;
+    private delegate nint sub_1400FAE34(nint a1, uint a2);
 
     [Function(CallingConventions.MicrosoftThiscall)]
     private delegate nint j_fGetJobCommandIconPath(nint a1, nint a2, nint a3);
@@ -145,26 +157,27 @@ public class Mod : ModBase // <= Do not Remove.
     //private static IFunction<j_fNex_GetJobCommand> j_fNex_GetJobCommand_func;
     //private static IFunction<j_fGetJobCommandIconPath> j_fGetJobCommandIconPath_func;
 
-    private unsafe nint sub_1400FAE34_Replacement(nint a1, nint a2, nint a3)
+    private unsafe nint sub_1400FAE34_Replacement(nint a1, uint a2)
     {
         //_logger.WriteLine($"[{_modConfig.ModId}] sub_1400FAE34()", Color.LightBlue);
-        nint row;
-        nint icon_id;
-        row = j_fNex_GetJobCommand_func(a2, a2, a3);
-        if (row == 0)
+        int icon_id;
+        INexRow? row = jobCommandTable.GetRow(a2);
+        if (row == null)
         {
             icon_id = 0;
         }
         else
         {
-            byte* addr = (byte*)row;
-            icon_id = *(addr + 4);
+            _logger.WriteLine($"getting icon from NXD: [{row}]", Color.LightBlue);
+            icon_id = (row.GetInt32(4));
         }
         if (40 >= icon_id && icon_id >= 28)
         {
+            _logger.WriteLine($"Getting modded Icon [{icon_id}]", Color.LightBlue);
             return j_fGetJobCommandIconPath_func(a1, icon_id, 256);
         }
-        return sub_1400FAE34_Hook.OriginalFunction(a1, a2, a3);
+        _logger.WriteLine($"Getting vanilla Icon [{icon_id}] from [{sub_1400FAE34_Hook.OriginalFunction}]", Color.LightBlue);
+        return sub_1400FAE34_Hook.OriginalFunction(a1, a2);
     }
 
 

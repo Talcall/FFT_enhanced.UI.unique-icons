@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FFT_enhanced.UI.unique-icons")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+251fed7a9fe5700b7c7e84d06b1be9d85a79917b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8713364f5b340ade577cd4ceb6c8d2695e72f23")]
 [assembly: System.Reflection.AssemblyProductAttribute("FFT_enhanced.UI.unique-icons")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FFT_enhanced.UI.unique-icons")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

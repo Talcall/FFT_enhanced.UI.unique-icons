@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B6C7B263-81AA-40FE-8B9A-CA761C3AA986}|FFT_enhanced.UI.unique-icons.csproj|e:\\fft unique uniques\\ide\\fft_enhanced.ui.unique-icons\\mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6C7B263-81AA-40FE-8B9A-CA761C3AA986}|FFT_enhanced.UI.unique-icons.csproj|solutionrelative:mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B6C7B263-81AA-40FE-8B9A-CA761C3AA986}|FFT_enhanced.UI.unique-icons.csproj|e:\\fft unique uniques\\ide\\fft_enhanced.ui.unique-icons\\modconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B6C7B263-81AA-40FE-8B9A-CA761C3AA986}|FFT_enhanced.UI.unique-icons.csproj|solutionrelative:modconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C7B263-81AA-40FE-8B9A-CA761C3AA986}|FFT_enhanced.UI.unique-icons.csproj|e:\\fft unique uniques\\ide\\fft_enhanced.ui.unique-icons\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6C7B263-81AA-40FE-8B9A-CA761C3AA986}|FFT_enhanced.UI.unique-icons.csproj|solutionrelative:config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6C7B263-81AA-40FE-8B9A-CA761C3AA986}|FFT_enhanced.UI.unique-icons.csproj|e:\\fft unique uniques\\ide\\fft_enhanced.ui.unique-icons\\mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C7B263-81AA-40FE-8B9A-CA761C3AA986}|FFT_enhanced.UI.unique-icons.csproj|solutionrelative:mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,41 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Config.cs",
-              "DocumentMoniker": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\Config.cs",
-              "RelativeDocumentMoniker": "Config.cs",
-              "ToolTip": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\Config.cs",
-              "RelativeToolTip": "Config.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T03:10:44.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ModConfig.json",
-              "DocumentMoniker": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\ModConfig.json",
-              "RelativeDocumentMoniker": "ModConfig.json",
-              "ToolTip": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\ModConfig.json",
-              "RelativeToolTip": "ModConfig.json",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T04:24:50.724Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ModConfig.json",
+              "DocumentMoniker": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\ModConfig.json",
+              "RelativeDocumentMoniker": "ModConfig.json",
+              "ToolTip": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\ModConfig.json*",
+              "RelativeToolTip": "ModConfig.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-28T06:50:05.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Mod.cs",
               "DocumentMoniker": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\Mod.cs",
               "RelativeDocumentMoniker": "Mod.cs",
               "ToolTip": "E:\\FFT unique uniques\\ide\\FFT_enhanced.UI.unique-icons\\Mod.cs",
               "RelativeToolTip": "Mod.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAgwHUAAAD4AAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAQwJ8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T02:37:23.737Z",
               "EditorCaption": ""
